@@ -1,10 +1,15 @@
 
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">All movies</ion-title>
-    </ion-toolbar>
+
+  <ion-header [translucent]="true">
+    <app-cabecera (queryEvent)="sendQuery($event)"></app-cabecera>
   </ion-header>
 
+ <input #input2  value="avengers" type="text" class="input"  placeholder="Enter a movie name" > 
+
+ <ion-content [fullscreen]="true">
+  <ion-item *ngFor="let movie of movies?.results">
+    {{movie.title}}
+  </ion-item>
+  
 </ion-content>

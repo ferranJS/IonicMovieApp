@@ -10,14 +10,10 @@ import { CabeceraComponentModule } from './cabecera/cabecera.module';
 
 import {HttpClient, HttpClientModule} from '@angular/common/http'
 
-import { StoreModule } from "@ngrx/store";
-import { simpleReducer } from "./simple.reducer";
-
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CabeceraComponentModule, HttpClientModule,
-  StoreModule.forRoot( { count: simpleReducer} )],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, CabeceraComponentModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent]
 })

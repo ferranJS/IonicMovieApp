@@ -3,8 +3,8 @@
   <div class="wrapper">
     <div class="app-name">Okode Movie Search</div>
     <div class="search">
-      <input type="text" class="input" aria-label="search" placeholder="Enter a movie name">
-      <button class="button" aria-label="submit search"><ion-icon name="search-outline" style="vertical-align: middle;"></ion-icon></button>
+        <input #queryEvent  type="text" class="input" aria-label="search" placeholder="Enter a movie name">
+        <button (click)="sendQuery(queryEvent.value)" class="button" id="but" aria-label="submit search"><ion-icon name="search-outline" style="vertical-align: middle;"></ion-icon></button>
     </div>
   </div>
   

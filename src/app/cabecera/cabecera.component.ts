@@ -1,10 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Store } from '@ngrx/store';
-import { Movie } from '../models/movie.model';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
-interface AppState {
-  movie: Movie;
-}
 
 @Component({
   selector: 'app-cabecera',
@@ -13,12 +8,16 @@ interface AppState {
 })
 export class CabeceraComponent implements OnInit {
 
-  constructor(private store: Store<AppState>) { }
+  constructor() { }
 
   ngOnInit() {}
 
-  search() {
-    this.store.dispatch({type: "ad"})
+  @Output() queryEvent = new EventEmitter<string>();
+
+  sendQuery(list: string) {
+    this.queryEvent.emit(list);
+    console.log(this.queryEvent, list)
   }
+  
 
 }

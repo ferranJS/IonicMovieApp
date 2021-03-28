@@ -17,10 +17,8 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  res: Object;
-  getData(query:string, lang:string, page:Number, year:Number) {
+  getData(query:string, lang:string, page:number, year:number) {
     this.apiUrl += "&query="+ query +"&language="+ lang +"&page="+ page +"&year="+ year +"&include_adult=true";
-    //let res: Object;
     return this.httpClient.get(this.apiUrl, httpOptions);
   }
 }
