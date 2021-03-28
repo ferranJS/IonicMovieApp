@@ -18,6 +18,4 @@ export class CabeceraComponent implements OnInit {
     this.queryEvent.emit(list);
     console.log(this.queryEvent, list)
   }
-  
-
 }

@@ -14,7 +14,7 @@ export class Tab1Page {
   ngOnInit() {}
 
   sendQuery(input: string) {
-    this.apiService.getData(input, "es-ES", 1, 2019)
+    this.apiService.getData(input, "es-ES", 1, 0)
     .subscribe(
       data => {
         this.movies = data;

@@ -23,7 +23,9 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@ionic/angular": "^5.5.2",
     "@ngrx/store": "^11.0.1",
+    "angular-cli-ghpages": "^1.0.0-rc.1",
     "rxjs": "~6.6.0",
+    "save-dev": "0.0.1-security",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
