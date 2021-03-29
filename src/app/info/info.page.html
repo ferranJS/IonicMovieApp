@@ -3,5 +3,15 @@
 </ion-header>
 
 <ion-content>
+    <div class="wrapper">
+        <ion-img id="poster" src="https://image.tmdb.org/t/p/original{{movie?.poster_path}}"></ion-img>
+        <div class="title-wrapper">
+            <div class="title">{{movie?.title}}</div>
 
+            <div class="date">
+                <ion-icon name="star-half-outline"></ion-icon> {{movie?.vote_average}} &nbsp; | &nbsp; {{movie?.release_date}} 
+            </div>
+        </div>
+        <div class="description">{{movie?.overview}}</div>
+    </div>
 </ion-content>
