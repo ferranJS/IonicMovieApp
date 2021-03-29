@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import {ApiService} from './../api.service';
 
 @Component({
@@ -9,7 +10,7 @@ import {ApiService} from './../api.service';
 export class Tab1Page {
 
   movies: any;
-  constructor(public apiService: ApiService) {}
+  constructor(public apiService: ApiService, private router: Router) {}
 
   ngOnInit() {}
 
@@ -18,9 +19,12 @@ export class Tab1Page {
     .subscribe(
       data => {
         this.movies = data;
-		    console.log(this.movies);
       }, 
       err => console.log(err)
     );
+  }
+
+  openInfo(id) {
+    this.router.navigate(['tabs/tab1/'+id]);
   }
 }

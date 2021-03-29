@@ -16,6 +16,5 @@ export class CabeceraComponent implements OnInit {
 
   sendQuery(list: string) {
     this.queryEvent.emit(list);
-    console.log(this.queryEvent, list)
   }
 }
