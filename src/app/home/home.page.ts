@@ -1,13 +1,13 @@
 import { Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-import {ApiService} from './../api.service';
+import {ApiService} from '../api.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss']
 })
-export class Tab1Page {
+export class HomePage {
 
   movies: any;
   constructor(public apiService: ApiService, private router: Router) {}

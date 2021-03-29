@@ -1,21 +1,22 @@
 import { IonicModule } from '@ionic/angular';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './home.page';
+import { MylistsPage } from './mylists.page';
+
 import { CabeceraComponentModule } from "../cabecera/cabecera.module";
 
-import { Tab1PageRoutingModule } from './home-routing.module';
-import { InfoPage } from '../info/info.page';
+import { MylistsPageRoutingModule } from './mylists-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab1PageRoutingModule,
+    MylistsPageRoutingModule, 
     CabeceraComponentModule
   ],
-  declarations: [Tab1Page, InfoPage]
+  declarations: [MylistsPage]
 })
-export class Tab1PageModule {}
+export class MylistsPageModule {}
