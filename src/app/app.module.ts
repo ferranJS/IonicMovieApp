@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabeceraComponentModule } from './cabecera/cabecera.module';
 
-import {HttpClient, HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent],

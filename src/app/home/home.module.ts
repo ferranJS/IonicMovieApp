@@ -6,7 +6,6 @@ import { HomePage } from './home.page';
 import { CabeceraComponentModule } from "../cabecera/cabecera.module";
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { InfoPage } from '../info/info.page';
 
 @NgModule({
   imports: [
