@@ -16,7 +16,6 @@ export class InfoPage implements OnInit {
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
-    console.log(this.id)
     this.getMovie();
   }
 

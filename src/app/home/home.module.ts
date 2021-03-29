@@ -16,6 +16,6 @@ import { InfoPage } from '../info/info.page';
     HomePageRoutingModule,
     CabeceraComponentModule
   ],
-  declarations: [HomePage, InfoPage]
+  declarations: [HomePage]
 })
 export class HomePageModule {}
