@@ -1,7 +1,13 @@
 # IonicMovieApp
-Ionic+Angular movie search app
+Ionic + Angular mobile movie search app
+
+-> [WebsiteLink](https://ionicmovie.netlify.app)
 
 Ionic 6.13.1
+
+## Usage
+
+Tap on the searching button and type the movie you want to search. Select the movie and that's all.
 
 ## Development server
 
