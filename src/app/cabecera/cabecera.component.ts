@@ -1,3 +1,4 @@
+import { ElementRef, ViewChild } from '@angular/core';
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 
@@ -14,7 +15,15 @@ export class CabeceraComponent implements OnInit {
 
   @Output() queryEvent = new EventEmitter<string>();
 
+  
+  @ViewChild("queryEvent") input: ElementRef;
+
   sendQuery(list: string) {
     this.queryEvent.emit(list);
   }
+
+  focus() {
+    this.input.nativeElement.focus();
+  }
+
 }

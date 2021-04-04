@@ -1,8 +1,8 @@
 <div class="content">
 
   <div class="wrapper">
-    <div class="app-name">Okode Movie Search</div>
-    <div class="search">
+    <div class="app-name">Simple Movie Search</div>
+    <div class="search" (click)="focus()">
         <input #queryEvent  type="text" class="input" aria-label="search" placeholder="Enter a movie name">
         <button (click)="sendQuery(queryEvent.value)" class="button" aria-label="submit search"><ion-icon name="search-outline" style="vertical-align: middle;"></ion-icon></button>
     </div>
